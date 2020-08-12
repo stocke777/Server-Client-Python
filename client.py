@@ -4,7 +4,7 @@ DIS = "disconnect"
 HEADER = 64
 FORMAT = "utf-8"
 PORT = 5050
-SERVER = "192.168.43.215"
+SERVER = ""  #add Iv4 of server device here
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ADDR = (SERVER, PORT)
 
@@ -22,5 +22,5 @@ def send(msg):
 
 
 
-send("HELLO THIS IS SOCKET TUT")
+send("HELLO THIS IS SOCKET TUT")   # message should be here
 send(DIS)
